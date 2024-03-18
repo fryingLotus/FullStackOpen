@@ -1,0 +1,55 @@
+GET http://localhost:3001/api/users/
+
+###
+GET http://localhost:3001/api/blogs/65bbdc8600d826ef034ac7b0
+
+###
+POST http://localhost:3001/api/blogs/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY1YmE4M2YwYWMwYTU1M2E2Y2MyMzQ1YSIsImlhdCI6MTcwNjgxMDQ0NywiZXhwIjoxNzA2ODE0MDQ3fQ.uWAVxGm6FaWO1BWjBYHveT_CbWIlTmua-dMb8XjFRp0
+
+{
+  "title": "second post root",
+  "author": "xd2d242",
+  "url": "https://exaasmple.com",
+  "likes": 120,
+  "userId":"65ba83f0ac0a553a6cc2345a"
+}
+### 
+POST http://localhost:3001/api/users/
+Content-Type: application/json
+
+{
+    "username":"root",
+    "name":"mad",
+    "password":"salainen"
+}
+
+###
+
+PUT http://localhost:3001/api/blogs/65a95359797a0a9a8b07546f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlRlc3RpbmdGcm9tIiwiaWQiOiI2NWE1NzVjM2Y0ODRkYjc2NmMzMzk5NmIiLCJpYXQiOjE3MDU2MDE1NjcsImV4cCI6MTcwNTYwNTE2N30.tMc6KVu2xcpmmU0P4DC5HgFBjqePLhNuOBKbtBcUm4I
+
+{
+  "title": "Example Blog 214",
+  "author": "John Doesaad",
+  "url": "https://example.com",
+  "likes": 203
+  
+}
+
+###
+DELETE  http://localhost:3001/api/blogs/65a969d31b5ac0319d51c24a
+
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlRlc3RpbmdGcm9tIiwiaWQiOiI2NWE1NzVjM2Y0ODRkYjc2NmMzMzk5NmIiLCJpYXQiOjE3MDU2MDE1NjcsImV4cCI6MTcwNTYwNTE2N30.tMc6KVu2xcpmmU0P4DC5HgFBjqePLhNuOBKbtBcUm4I
+
+###
+POST http://localhost:3001/api/blogs/65bbdc8600d826ef034ac7b0/comments
+Content-Type: application/json
+
+{
+  "content": "This is a new comment."
+}
+###
+GET http://localhost:3001/api/comments

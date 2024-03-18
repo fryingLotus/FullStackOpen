@@ -1,0 +1,28 @@
+
+GET http://localhost:3001/api/blogs/
+###
+POST http://localhost:3001/api/blogs/ 
+Content-Type: application/json
+
+{
+    "title": "My first blog",
+    "author": "lotus gaming",
+    "url": "http//yourmom.com",
+    "likes": 999
+
+}
+###
+PUT http://localhost:3001/api/blogs/659ec256e8c48d295b554bb0
+Content-Type: application/json
+
+{
+    "title": "My second blog",
+    "author": "lotus gaming trueXD",
+    "url": "http//yourmom.com",
+    "likes": 1000
+
+}
+
+###
+DELETE  http://localhost:3001/api/blogs/659ec11d2bee5d072f7010a8
+

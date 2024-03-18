@@ -1,0 +1,22 @@
+GET http://localhost:3001/api/persons/659c37d370ca978c3b0e3b16
+
+###
+DELETE http://localhost:3001/api/persons/12312312312121451sdas123
+
+###
+POST http://localhost:3001/api/persons/
+Content-Type: application/json
+
+{
+    "name": "Anna",
+    "number": "040-1234556123"
+}
+### 
+
+PUT http://localhost:3001/api/persons/659c37d370ca978c3b0e3b16
+Content-Type: application/json
+
+{
+    "name": "Updated name",
+    "important": "0987654321"
+}

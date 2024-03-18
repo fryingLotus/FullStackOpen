@@ -1,0 +1,12 @@
+
+.grid-contact {
+    display: grid;
+    width: 30%;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-contact > button {
+    width: 80%;
+}
